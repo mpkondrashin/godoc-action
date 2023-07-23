@@ -20,7 +20,7 @@ cp -r * "$GOPATH/src/github.com/$GITHUB_REPOSITORY"
 echo COPY
 ls -lR "$GOPATH/src/github.com/$GITHUB_REPOSITORY"
 
-(cd /tmp && godoc -http localhost:8080 &)
+(cd "$GOPATH/src/github.com/$GITHUB_REPOSITORY" && godoc -http localhost:8080 &)
 
 for (( ; ; )); do
   echo SLEEP
