@@ -1,4 +1,4 @@
-FROM golang:1.13-buster
+FROM golang:1.20-bookworm
 
 ENV GOPATH /
 RUN go get golang.org/x/tools/cmd/godoc
