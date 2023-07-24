@@ -30,6 +30,8 @@ for (( ; ; )); do
   fi
 done
 
+echo git config
+git config --global --add safe.directory '*'
 echo git checkout origin/gh-pages
 git checkout origin/gh-pages || git checkout -b gh-pages
 echo git checkout origin/gh-pages - done
